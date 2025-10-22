@@ -1,0 +1,30 @@
+body {
+    font-family:"Alfa Slab One";
+    background-color: #EDBA61;
+    color: #113e1c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Alumni Sans Pinstripe" ;
+    font-size: 40pt;
+}
+
+header {
+    text-align: center;
+}
+
+#hero, footer {
+    background-color: #3267a1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+#hero img {
+    width: 300px;
+}
+#bio {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
