@@ -28,3 +28,14 @@ header {
     padding: 20px;
     border-radius: 8px;
 }
+#hobbies {
+    background-color: #EDBA61;
+    padding: 20px;
+    border-radius: 8px;
+}
+#hobbies ul li:nth-child(odd) {
+    color: black;
+    background-color: #EDBA61;
+    padding: 20px;
+    border-radius: 8px;
+}
