@@ -94,6 +94,7 @@ footer {
     margin-top: 30px;
 }
 #myVideo {
+    
     aspect-ratio: 1/1;   
     border-radius: 10px;
     border: 3px solid #000000;
@@ -149,4 +150,18 @@ footer {
         height: auto;
         display: block;
     }
+}
+/* Contact Form */
+ #formElements {
+    display: grid;
+ }
+ 
+ #formElements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#formElements li {
+    list-style-type: none;
 }

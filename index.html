@@ -122,7 +122,64 @@
 
         </section>
 
+        <section id="contact">
 
+             <h2>Contact Us:</h2>
+
+            
+            <form id="ContactForm" name="ContactForm" method="post" data-netlify="true">
+                <fieldset>
+
+                    <div id="formElements">
+                    <label for="name">Name (required):</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email (required):</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone (optional):</label>
+                    <input type="tel" id="phone" name="phone" optional>
+
+                    <label for="phonetype">Phone Type (optional):</label>
+                    <select id="phonetype" name="phonetype">
+                        <option value="home">Home</option>
+                        <option value="work">Work</option>
+                        <option value="mobile">Mobile</option>
+                    </select>
+
+                    <label for="message">Message (optional):</label>
+                    <textarea id="message" name=" message" rows="4" optional></textarea>
+
+                    <fieldset>  
+                        <legend>Would You Like A Reply?</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" id="replyYes" name="reply" value="yes">
+                                <label for="replyYes">Yes, That would be nice!</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="replyNo" name="reply" value="no" checked>
+                                <label for="replyNo">No thanks!</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+                    <button type="submit">Send</button>
+
+                    
+                        </div>
+
+
+                </fieldset>
+
+
+            </form>
+
+             
+
+        </section>
+
+       
 
 
     </main>
