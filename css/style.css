@@ -165,3 +165,50 @@ footer {
 #formElements li {
     list-style-type: none;
 }
+@media screen and (min-width: 60em) {
+
+    #formElements figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #formElements figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    #lit div {
+        max-width: 100%;
+        columns: 40rem;
+    }
+}
+
+
+@media screen and (min-width: 100em) {
+
+    #formElements {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #formElements h2 {
+        grid-column: 1 / -1;
+    }
+
+    #formElements hr {
+        display: none;
+    }
+
+    #formElements figure {
+        display: block;
+    }
+
+    #formElements img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
