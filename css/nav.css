@@ -21,7 +21,13 @@ main {
 
 /* navbar */
 
-
+nav {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
 
 /* logo */
 
