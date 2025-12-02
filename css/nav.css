@@ -40,18 +40,32 @@ nav {
     height: 8vw;
 }
 .logo h1 {
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 
 /* navigation list */
 
+.navbar-links li {
+    list-style: none;
+    display: block;
+    padding: 0.5em 0;
+}
 
 /*  
  style all a tags in header 
  and then on hover
 */
 
+.navbar-links a {
+    color: #113e1c;
+    background-attachment: black;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+}
 
 
 
