@@ -13,14 +13,14 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
-    
+
 </head>
 
 <body>
 
 
     <header>
-    <!--Nav Bar-->
+        <!--Nav Bar-->
         <nav class="navbar">
 
             <div class="logo">
@@ -57,15 +57,19 @@
         <!--Bio Section-->
         <section id="bio">
             <h2>Biography</h2>
-            <p>I enjoy walking and bike riding. These two activities help me get fit and are nice calming things to do after a long day.</p>
+            <p>I enjoy walking and bike riding. These two activities help me get fit and are nice calming things to do
+                after a long day.</p>
             <p>Videogames are my favorite pass time. They are fun to play with friends and are super relaxing
-            and give me something to improve at other than school.</p>
-            <p>My favorite food is pasta but I like alot of other foods as well. Some include pizza, mac and cheese, burgers, and chicken. </p>
-            <p> I dream to be great. One day I wish to have a Job that I love and believe to be satisfied with beyond just making money. 
-            I want to be able to look back on my life when I am older and be proud of what I accomplished as a human. Im excited for what life
-            will throw at me and I will adapt and change to be the best version of myself I can be.
+                and give me something to improve at other than school.</p>
+            <p>My favorite food is pasta but I like alot of other foods as well. Some include pizza, mac and cheese,
+                burgers, and chicken. </p>
+            <p> I dream to be great. One day I wish to have a Job that I love and believe to be satisfied with beyond
+                just making money.
+                I want to be able to look back on my life when I am older and be proud of what I accomplished as a
+                human. Im excited for what life
+                will throw at me and I will adapt and change to be the best version of myself I can be.
             </p>
-            <img src="img/Imageofme.jpg" alt ="Picture of me">
+            <img src="img/Imageofme.jpg" alt="Picture of me">
             <p>(picture of me)</p>
             <p>now on netifly!</p>
         </section>
@@ -74,23 +78,29 @@
             <h2>Hobbies</h2>
             <ul>
                 <li>Videogames</li>
-                <p> I enjoy video games as they provide a nice pass time to make friends and socialize after a long day of school, 
+                <p> I enjoy video games as they provide a nice pass time to make friends and socialize after a long day
+                    of school,
                     they also provide a goal and let me improve at something to keep my life fulfilled.</p>
                 <li>Biking</li>
                 <li>Walking</li>
                 <p>These two help me keep fit and reach my step goals every day.</p>
                 <li>Building Keyboards</li>
-                <p> I love building custom mechanical keyboards its been a hobby of mine for a long time, although at times its hard to keep up
+                <p> I love building custom mechanical keyboards its been a hobby of mine for a long time, although at
+                    times its hard to keep up
                     as the parts are very expensive.
                 </p>
                 <li>Tabletop Games</li>
-                 <p>This is something that I recently picked up. Ive started to play games like warhammer 40k with my friends at a local game store.
-                    Its been a super fun way to hang out with my friends as well as meeting new people. I also enjoy the painting and building the models
+                <p>This is something that I recently picked up. Ive started to play games like warhammer 40k with my
+                    friends at a local game store.
+                    Its been a super fun way to hang out with my friends as well as meeting new people. I also enjoy the
+                    painting and building the models
                     that I play with, its been a great way to help me stay creative even when I feel down.
-                 </p>
+                </p>
                 <li>Cooking</li>
-                <p>I love to cook, its always been a passion of mine. My favorite thing to make is my famous gnocci which is like a potato pasta.
-                    The first time ive made it was with my grandfather who also loved to cook and its been something ive enjoyed ever since.
+                <p>I love to cook, its always been a passion of mine. My favorite thing to make is my famous gnocci
+                    which is like a potato pasta.
+                    The first time ive made it was with my grandfather who also loved to cook and its been something ive
+                    enjoyed ever since.
                 </p>
 
             </ul>
@@ -119,32 +129,89 @@
             <!--Blog Section (lit)-->
             <article id="lit">
 
-                <h2>Frankenstein - Mary Shelley</h2>
+                <h2>Image Hover Effects</h2>
 
                 <div>
 
-                    <p>I passed the summer thus engaged in my laboratory. The leaves of that year had withered
-                        before my work drew near to a close, and now every day showed me more plainly
-                        how well I had succeeded. But my enthusiasm was
-                        checked by my anxiety, and I appeared rather like one doomed by slavery to toil
-                        in the mines, or any other unwholesome trade than an artist occupied by his favourite
-                        employment.</p>
+                    <p>I decided my research topic to be on image hovering effects. Essentially what this does is
+                        provide an effect like zooming in or brightening when hovering over an image with your mouse.
+                        This is coded in CSS but the images are added in html. For my example I used images of my models
+                        I built and painted.
+                    </p>
 
-                    <p>The summer months passed while I was thus engaged, heart and soul,
-                        in one pursuit. It was a most beautiful season; never did the
-                        fields bestow a more plentiful harvest or the vines yield a
-                        more luxuriant vintage, but my eyes were insensible to the
-                        charms of nature. And the same feelings which made me neglect
-                        the scenes around me caused me also to forget those friends
-                        who were so many miles absent.</p>
+                    <p>These hover effects are simple to implement but add detail to your website. The most common way
+                        to do this is through filters and transformations. There are 10 filters you can use but the most
+                        common include: blur, brightness, grayscale, and contrast. Multiple filters in the same line of
+                        code is possible to add many effects at once. The two main pieces of adding a hover effect are:
+                        the type: img, and the pseudo class: img:hover.</p>
 
-                    <p>It was on a dreary night of November that I beheld the
-                        accomplishment of my toils. With an anxiety that almost
-                        amounted to agony, I collected the instruments of life around
-                        me, that I might infuse a spark of being into the lifeless
-                        thing that lay at my feet. It was already one in the morning;
-                        the rain pattered dismally against the panes, and my candle was
-                        nearly burnt out.</p>
+                    <p>The img type is how the image looks before the user interacts with it. For example this is where
+                        you put the border, width and hight. Most importantly when using hover effects, you must add a
+                        transition line which is the amount of time the image takes to transition when interacted with.
+                        For example: transition: transform 0.3s ease, filter 0.3s ease;. </p>
+
+                    <p>The pseudo class img:hover effects how the image looks when interacted with. You can use the
+                        transform or filter properties to alter how the image. Although you have to also include the
+                        cursor: pointer; line in order for it to detect and activate when you hover your mouse over it.
+                    </p>
+
+                    <p> In order to add the hover effect to these images, first I created a div and named a class
+                        hover-image-gallery then, I created a class named hover-effect and added that class to each of
+                        my images in html, for example: img src="img/model1.jpeg" class="hover-effect". Then I went
+                        over to my style.css file and used the pseudo class; hover, to add effects: .hover-image-gallery
+                        img:hover. Then, I added a sort of zoom in when you hover over the image with transform: scale()
+                        function. Then a filter brightness() function to brighten the image for more effect. I added two
+                        other effect as well, one is a grayscale which makes the picture fade from gray to full color.
+                        This was done by creating a new class named hover-image-gallery2. Then changing the filter in
+                        the normal img css section to grayscale 100% and adding in the hover section grayscale 0%. The
+                        last function I added was a blur function in the same way I did the grayscale. These can really
+                        help images pop and can add that extra detail to help a website look and feel that much better.
+                    </p>
+                    <p> When done the transform scale and filter brightness example should look something like this in
+                        code:
+                    </p>
+                    <!--Example of code using <pre><code) to keep look and format-->
+                    <pre><code>
+HTML:
+&lt;div class="hover-image-gallery"&gt;
+    &lt;img src="img/model1.jpeg" 
+    class="hover-effect"&gt;
+&lt;/div&gt;
+
+CSS:
+.hover-image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hover-image-gallery img {
+    width: 30%;
+    height: auto;
+    transition: transform 0.3s ease, 
+    filter 0.3s ease;
+    border: #0d0d0d 3px solid;
+}
+
+.hover-image-gallery img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+                    </code></pre>
+
+                    <div class="hover-image-gallery">
+                        <img src="img/model1.jpeg" class="hover-effect">
+                    </div>
+
+                    <div class="hover-image-gallery2">
+                        <img src="img/model2.jpeg" class="hover-effect">
+                    </div>
+
+                    <div class="hover-image-gallery3">
+                        <img src="img/model3.jpeg" class="hover-effect">
+                    </div>
 
                 </div>
 
