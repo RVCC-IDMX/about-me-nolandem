@@ -1,7 +1,9 @@
-html, body {
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 body {
     font-family: "Alfa Slab One";
     background-color: #EDBA61;
@@ -41,6 +43,11 @@ footer {
     text-align: center;
     background-color: #f0f0f0;
     padding: 20px;
+    border-radius: 8px;
+}
+
+#bio img {
+    width: 200px;
     border-radius: 8px;
 }
 
@@ -94,21 +101,93 @@ footer {
     padding: 2rem;
 }
 
+/* Hover Image Zoom and Brightness */
+
+.hover-image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hover-image-gallery img {
+    width: 30%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border: #0d0d0d 3px solid;
+}
+
+.hover-image-gallery img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+/* Hover Image Grayscale */
+
+.hover-image-gallery2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hover-image-gallery2 img {
+    width: 30%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border: #0d0d0d 3px solid;
+    filter: grayscale(100%)
+}
+
+.hover-image-gallery2 img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+
+/* Hover Image Blur*/
+
+.hover-image-gallery3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hover-image-gallery3 img {
+    width: 30%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border: #0d0d0d 3px solid;
+    filter: blur(2px);
+}
+
+.hover-image-gallery3 img:hover {
+    transform: scale(1.1);
+    filter: blur(0) brightness(1.2);
+    cursor: pointer;
+}
+
+
+/* Video Section */
 #video {
     text-align: center;
     margin-top: 30px;
 }
+
 #myVideo {
     width: 100%;
-    aspect-ratio: 1/1;   
+    aspect-ratio: 1/1;
     border-radius: 10px;
     border: 3px solid #0d0d0d;
     display: block;
-    margin: 10px auto;     
+    margin: 10px auto;
 }
 
 
-
+/*Media Queries */
 @media screen and (min-width: 60em) {
 
     #gallery figure {
@@ -156,12 +235,13 @@ footer {
         display: block;
     }
 }
+
 /* Contact Form */
- #formElements {
+#formElements {
     display: grid;
- }
- 
- #formElements ul {
+}
+
+#formElements ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -170,6 +250,7 @@ footer {
 #formElements li {
     list-style-type: none;
 }
+
 @media screen and (min-width: 60em) {
 
     #formElements figure {
