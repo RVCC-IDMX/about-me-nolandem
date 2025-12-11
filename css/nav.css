@@ -26,6 +26,7 @@ nav {
     display: flex;
     align-items: center;
     border-radius: 8px;
+    right: 0;
 }
 
 /* logo */
@@ -101,5 +102,73 @@ such that no text wraps
 
     .navbar-links li {
         padding: 0 1em;
+    }
+}
+
+
+
+.nav__toggle .close {
+    display: none;
+}
+
+/* Hamburger Icon */
+.nav__toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+
+.nav__checkbox {
+    display: none;
+}
+
+/* Hide navbar on mobile */
+.navbar-links ul {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+
+#nav__checkbox:checked ~ .navbar-links ul {
+  display: block;
+}
+
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none;
+}
+
+
+/* media query for non mobile devices */
+@media (min-width: 60rem) {
+
+    
+    .nav__toggle {
+        display: none;
+    }
+
+    .navbar-links ul {
+        display: flex !important;
+        flex-direction: row;
+        background: none;
+        width: auto;
+        padding: 0;
+    }
+
+    .navbar-links li {
+        padding: 0 1em;
+        display: block;
     }
 }
